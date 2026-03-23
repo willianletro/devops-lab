@@ -5,17 +5,17 @@ import time
 ORIGEM_BASE = "./xmls"
 
 MAPEAMENTO = {
-    os.path.join("02912729000160", "entrada"): r"\\192.168.0.211\degrau xml\01_MATRIZ",
+    #os.path.join("02912729000160", "entrada"): r"\\192.168.0.211\degrau xml\01_MATRIZ",
     #"02912729000160/entrada": "/mnt/consinco/02_CD",
-    os.path.join("02912729000321","entrada"): r"\\192.168.0.211\degrau xml\03_BROMELIAS",
-    os.path.join("02912729000240","entrada"): r"\\192.168.0.211\degrau xml\06_DISTRITO",
-    os.path.join("02912729000755","entrada"): r"\\192.168.0.211\degrau xml\09_MVIANA"
+    #os.path.join("02912729000321","entrada"): r"\\192.168.0.211\degrau xml\03_BROMELIAS",
+    #os.path.join("02912729000240","entrada"): r"\\192.168.0.211\degrau xml\06_DISTRITO",
+    #os.path.join("02912729000755","entrada"): r"\\192.168.0.211\degrau xml\09_MVIANA"
     
-    #"02912729000160/entrada": "/mnt/consinco/01_MATRIZ",
-    #"02912729000160/entrada": "/mnt/consinco/02_CD",
-    #"02912729000321/entrada": "/mnt/consinco/03_BROMELIAS",
-    #"02912729000240/entrada": "/mnt/consinco/06_DISTRITO",
-    #"02912729000755/entrada": "/mnt/consinco/09_MVIANA"
+    "02912729000160/entrada": "/mnt/consinco/01_MATRIZ",
+    "02912729000160/entrada": "/mnt/consinco/02_CD",
+    "02912729000321/entrada": "/mnt/consinco/03_BROMELIAS",
+    "02912729000240/entrada": "/mnt/consinco/06_DISTRITO",
+    "02912729000755/entrada": "/mnt/consinco/09_MVIANA"
 }
 
 def processar():
