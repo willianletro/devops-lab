@@ -10,3 +10,4 @@ SEFAZ_URL = os.getenv("SEFAZ_URL")
 SEFAZ_EVENTO_URL = os.getenv("SEFAZ_EVENTO_URL")
 
 PASTA_XML = "data/xmls"
+#testepipelines
