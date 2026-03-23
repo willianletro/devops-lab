@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug app.main",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "app.main",
+      "justMyCode": true
+    }
+  ]
+}
