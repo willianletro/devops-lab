@@ -75,7 +75,9 @@ services:
       - db
     volumes:
       - ./sefaz_xml_downloader:/app
-      - ./xmls:/app/xmls
+      #- ./xmls:/app/xmls
+      - /home/prod/xmls:/app/xmls
+      - /mnt/consinco:/mnt/consinco
 
 
 volumes:
