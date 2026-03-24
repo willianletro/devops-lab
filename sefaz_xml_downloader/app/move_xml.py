@@ -11,7 +11,7 @@ MAPEAMENTO = {
 }
 
 def processar():
-    time.sleep(20)
+    
     for cnpj, destino in MAPEAMENTO.items():
         origem = os.path.join(PASTA_XML, cnpj)
 
@@ -24,7 +24,9 @@ def processar():
 
             origem_arquivo = os.path.join(origem, arquivo)
             destino_arquivo = os.path.join(destino, arquivo)
-
+            print(origem_arquivo)
+            print(destino_arquivo)
+            
             try:
                 # evita duplicado
                 if os.path.exists(destino_arquivo):
@@ -40,7 +42,7 @@ def processar():
 
             except Exception as e:
                 print(f"❌ Erro: {arquivo} -> {e}")
-
+    time.sleep(750)
 #if __name__ == "__main__":
     #print(r"\\192.168.0.211\degrau xml\01_MATRIZ")
     #processar()
