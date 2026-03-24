@@ -8,7 +8,6 @@ from move_xml import processar
 
 
 def main():
-    processar()
     log_info("Iniciando processo...")
 
     for cnpj in CNPJS:

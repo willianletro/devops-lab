@@ -74,7 +74,7 @@ services:
     depends_on:
       - db
     volumes:
-      - /home/prod/sefaz_xml_downloader/data:/app/data
+      - ./sefaz_xml_downloader/data:/app/data
       - /mnt/consinco:/mnt/consinco
 
 volumes:
