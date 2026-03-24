@@ -3,18 +3,15 @@ import base64
 import gzip
 import xml.etree.ElementTree as ET
 from manifestacao import manifestar_nfe
-from config import CERT_PATH, CERT_PASSWORD, SEFAZ_EVENTO_URL
+from config import CERT_PATH, CERT_PASSWORD, SEFAZ_EVENTO_URL, PASTA_XML
 from logger import log_erro
 from db import xml_existe ,salvar_xml_db
 from move_xml import processar
 
 
-BASE_DIR = "xmls"
-
-
 # 📁 cria estrutura de pastas
 def criar_pastas(cnpj_base):
-    base_path = os.path.join(BASE_DIR, cnpj_base)
+    base_path = os.path.join(PASTA_XML, cnpj_base)
 
     entrada = os.path.join(base_path, "entrada")
     saida = os.path.join(base_path, "saida")

@@ -9,5 +9,7 @@ CERT_PASSWORD = os.getenv("CERT_PASSWORD")
 SEFAZ_URL = os.getenv("SEFAZ_URL")
 SEFAZ_EVENTO_URL = os.getenv("SEFAZ_EVENTO_URL")
 
-PASTA_XML = "data/xmls"
+PASTA_XML = os.getenv("PASTA_XML")
+NSU_CONTROL = os.getenv("NSU_CONTROL")
+LOGS = os.getenv("LOGS")
 #testepipelines
