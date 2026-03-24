@@ -4,16 +4,16 @@ import time
 from config import PASTA_XML
 
 MAPEAMENTO = {
-    "02912729000160": "/mnt/consinco/01_MATRIZ",
-    "02912729000321": "/mnt/consinco/03_BROMELIAS",
-    "02912729000240": "/mnt/consinco/06_DISTRITO",
-    "02912729000755": "/mnt/consinco/09_MVIANA"
+    "02912729000160/entrada": "/mnt/consinco/01_MATRIZ",
+    "02912729000321/entrada": "/mnt/consinco/03_BROMELIAS",
+    "02912729000240/entrada": "/mnt/consinco/06_DISTRITO",
+    "02912729000755/entrada": "/mnt/consinco/09_MVIANA"
 }
 
 def processar():
     
     for cnpj, destino in MAPEAMENTO.items():
-        origem = os.path.join(PASTA_XML, cnpj, "entrada")
+        origem = os.path.join(PASTA_XML, cnpj)
 
         if not os.path.exists(origem):
             continue
@@ -31,7 +31,7 @@ def processar():
                     continue
 
                 # copia
-                shutil.copy2(origem_arquivo, destino_arquivo)
+                shutil.copy(origem_arquivo, destino_arquivo)
 
                 print(f"✔ Enviado: {arquivo}")
 

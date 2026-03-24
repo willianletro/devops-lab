@@ -188,13 +188,14 @@ def salvar_xmls(doczips, cnpj):
                 xml_texto
                 
             )
-            processar()    
+            
                 
 
         except Exception as e:
             sucesso_total = False
             log_erro("XML_DESCONHECIDO", e)
-            
+        
+        processar()   
     return sucesso_total
             
 def extrair_ult_nsu(xml):
