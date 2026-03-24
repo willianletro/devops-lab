@@ -179,13 +179,16 @@ def salvar_xmls(doczips, cnpj):
             else:
                 print(f"⚠️ XML já existe: {arquivo}")
             
+            # 🔥 Converter antes de salvar no banco
+            xml_texto = xml_descompactado.decode("utf-8", errors="replace")
+            
             # 💾 SALVAR NO BANCO (ESSENCIAL)
             salvar_xml_db(
                 chave,
                 cnpj,
                 tipo,
                 data_emissao,
-                xml_descompactado
+                xml_texto
                 
             )
             processar()    

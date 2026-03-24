@@ -1,7 +1,7 @@
 import json
 import os
 
-ARQUIVO_NSU = "data/nsu_control.json"
+ARQUIVO_NSU = "/data/nsu_control.json"
 
 
 def carregar_nsu():
