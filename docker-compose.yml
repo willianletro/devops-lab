@@ -76,8 +76,7 @@ services:
     volumes:
       - /home/prod/sefaz_xml_downloader/cert:/app/cert
       - /home/prod/sefaz_xml_downloader/data:/app/data
-      - /home/prod/sefaz_xml_downloader/logs_erro:/app/logs_erro
-      - /home/prod/sefaz_xml_downloader/json_data:/app/data
+      - /home/prod/sefaz_xml_downloader/logs:/app/logs
       - /home/prod/sefaz_xml_downloader/xmls:/app/xmls
       - /mnt/consinco:/mnt/consinco
 
