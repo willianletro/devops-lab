@@ -47,7 +47,7 @@ def main():
                     print("❌ Erro no lote, NSU NÃO atualizado")
             else:
                 print("Nenhum XML encontrado")
-
+    processar()
     log_info("Processo finalizado")
 
 
