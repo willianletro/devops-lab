@@ -186,7 +186,6 @@ def salvar_xmls(doczips, cnpj):
                 tipo,
                 data_emissao,
                 xml_texto
-                
             )
             
                 

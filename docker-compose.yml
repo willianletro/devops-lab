@@ -78,7 +78,6 @@ services:
       - /mnt/consinco:/mnt/consinco
 
 volumes:
-  postgres_data:
   grafana_data:
   prometheus_data:
   loki_data:
